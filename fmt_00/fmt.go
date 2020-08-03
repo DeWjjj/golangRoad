@@ -8,3 +8,5 @@ func main() {
 	fmt.Println("The life is different,why not use go?")
 	//fmt.Println==Printline意味输出一行。
 }
+
+//

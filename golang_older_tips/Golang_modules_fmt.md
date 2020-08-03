@@ -18,3 +18,4 @@ Fmt.Printf("%T",a)
 
 //string
 
+<>
