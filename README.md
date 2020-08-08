@@ -14,3 +14,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 3.const
 4.iota(计数器)
 5.shiftOperators(移位)
+6.print_type(输出占位符类型)
