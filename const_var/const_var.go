@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-const (
+const ( //常量定义了之后不能修改
 	country = "china"
 	sexy    = "man" // 全局变量可以声明之后不进行使用
 )
