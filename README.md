@@ -12,5 +12,5 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 1.fmt_00(简易使用fmt模块)
 2.const_var(常量和变量的分别)
 3.const
-4.iota
+4.iota(计数器)
 5.shiftOperators(移位)
