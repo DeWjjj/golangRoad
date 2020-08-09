@@ -15,3 +15,6 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 4.iota(计数器)
 5.shiftOperators(移位)
 6.print_type(输出占位符类型)
+7.path(如何去在go中保存地址)
+8.boolean(布尔值)
+9.Sprintf_split(字符串常规操作(判断是否包含，判断字符在字符串中位置))

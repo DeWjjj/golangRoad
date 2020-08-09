@@ -15,7 +15,7 @@ func main() {
 	fmt.Printf("%o\n", n)
 	fmt.Printf("%x\n", n)
 	var s = "hello"
-	fmt.Printf("%s\n", s)
+	fmt.Printf("%s\n", s) //%s只能用来输出字符串
 }
 
 //GOLANG字符串内部实现UTF-8，GO语言中字符串是用双引号包裹。 ex: s := "hello"。
@@ -23,3 +23,5 @@ func main() {
 //字节：1字节=8bit(8个二进制位)。
 //1个UTF-8的汉字字符“哈”，一般占3个字节。
 //1个英文字符'a'，一般占1个字节。
+
+//*对类型想学习完善一点的，可以查看文件夹内的md文件。
