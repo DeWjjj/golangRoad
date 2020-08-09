@@ -23,4 +23,10 @@ func main() {
 	a1 := "白" //string
 	a2 := '黑' //rune
 	fmt.Printf("%T %T", a1, a2)
+
+	//强制转换
+	number := 100
+	var numberFloat float64
+	numberFloat = float64(number)
+	fmt.Println(numberFloat)
 }
