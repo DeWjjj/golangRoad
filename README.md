@@ -26,4 +26,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 13.isChinese(判断是否为中文)
 14.jumpoutfor(多层循环因内循环跳出而全部结束，俗称大跳)
 15.for00(continue\break\fallthrough(不建议使用))
-16.goto(直接从循环中跳到另外一个标签)
+16.goto(直接从循环中跳到另外一个标签)   
