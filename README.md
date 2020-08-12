@@ -24,3 +24,5 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 11.simplefor(三种类型for语句)
 12.for_range(用于遍历数组、切片、字符串、map和通道(channel)后两者不会)
 13.isChinese(判断是否为中文)
+14.jumpoutfor(多层循环因内循环跳出而全部结束，俗称大跳)
+15.for00(continue\break\fallthrough(不建议使用))
