@@ -14,6 +14,7 @@ func main() {
 	fmt.Println(sli2 == nil) //true nil = []
 
 	sli1 = []int{1, 2, 3}
+	fmt.Printf("%T\n", sli1)
 	sli2 = []string{"北京", "上海", "广州"}
 	fmt.Println(sli1, sli2)
 	fmt.Printf("len(sli1):%d cap(sli2):%d\n", len(sli1), cap(sli1))
