@@ -13,4 +13,5 @@ func main() {
 	*a2 = 100
 	fmt.Println(a2, *a2)
 	//new函数申请一个内存地址
+	//make是用来给slice、map、chan申请内存的，make函数返回的是对应这三个类型的内存地址。
 }
