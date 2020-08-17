@@ -36,5 +36,7 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 23.slice_append00(切片的删除案例)
 24.pointer(指针取地址，和取该地址的值)
 25.map(map使用，类似复合数组)
-26.map_delete(map按照key来删除数据) //go doc builtin.<函数名>
+26.map_delete(map按照key来删除数据) //go doc 可以查看文档，但是中国人推荐上 http://www.studygolang.com/pkgoc 查阅
 27.student_score(rand函数随机生成成绩，排序)
+28.total_words(判断单词在句子中的出现次数)
+29.func(自建函数，int=>string转换)
