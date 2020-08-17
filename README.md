@@ -37,3 +37,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 24.pointer(指针取地址，和取该地址的值)
 25.map(map使用，类似复合数组)
 26.map_delete(map按照key来删除数据)
+27.student_score(rand函数随机生成成绩，排序)
