@@ -16,5 +16,5 @@ func plx() {
 
 func main() {
 	plx()
-
+	fmt.Println(x) //函数默认向外查找，不会查询函数内部的变量
 }
