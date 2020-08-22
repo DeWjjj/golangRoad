@@ -51,3 +51,5 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 37.deferEx4(liwenzhou包括指针传值内容)
 38.func_closures(函数闭包)
 39.deferEx6(liwenzhou变量改变对defer后的函数取值的问题)
+40.panic_recover(Go语言没有异常机制，所以我们使用其函数实现错误报错)
+41.scan(扫描，得到输入的三种形式)
