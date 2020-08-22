@@ -49,3 +49,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 35.calculator(简易加减乘除计算机，闭包逻辑)
 36.suffix(定义类型，后缀相同原样返回，不同则添加)
 37.deferEx4(liwenzhou)
+38.func_closures(函数闭包)
