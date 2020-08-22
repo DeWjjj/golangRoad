@@ -53,3 +53,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 39.deferEx6(liwenzhou变量改变对defer后的函数取值的问题)
 40.panic_recover(Go语言没有异常机制，所以我们使用其函数实现错误报错)
 41.scan(扫描，得到输入的三种形式)
+42.distributionCoins(分配硬币，有一e,i,o,u（不区分大小写）分别得到1，2，3，4硬币)
