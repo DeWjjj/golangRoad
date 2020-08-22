@@ -11,12 +11,13 @@ func deferDemo() {
 }
 
 func deferDemo1() {
+
 	fmt.Println("First!")
-	defer fmt.Println("Next!") //defer的本质是将其队列置于最后一列，多个连续defer也是按照顺序再次将其加到队列最后
-	defer fmt.Println("Next1!")
+	defer fmt.Println("End!")
+	defer fmt.Println("Next!")  //defer的本质是将其队列置于最后一列，多个连续defer则是按照顺序被放到先一个defer之前
+	defer fmt.Println("Next1!") //所以最后的defer反而是最早运行的
 	defer fmt.Println("Next2!")
 	defer fmt.Println("Next3!")
-	fmt.Println("End!")
 }
 
 func main() {
