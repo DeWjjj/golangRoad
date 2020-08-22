@@ -7,7 +7,7 @@ import (
 
 func makeSuffix(suffix string) func(string) string {
 	return func(name string) string {
-		if !strings.HasSuffix(name, suffix) {
+		if !strings.HasSuffix(name, suffix) { //HasSuffix的意思是指，查询后缀。
 			return name + suffix
 		}
 		return name
