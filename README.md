@@ -61,3 +61,6 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 47.struct00(结构体通过内存地址传参)
 48.struct01(new函数创建空的结构体)
 49.func_pointer(指针)
+50.struct02(批量结构体传参，结构体内字段内存地址连续性)
+51.struct_pointer(结构体指针)
+52.struct_func(结构体函数)
