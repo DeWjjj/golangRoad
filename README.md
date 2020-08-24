@@ -68,3 +68,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 54.expose(简单了解标示符首字母大写暴露问题)
 55.method_pointer(函数调用限制传指针)
 56.type_method(自定义type，用method)
+57.studentSystem(简易学生学号管理系统)
