@@ -66,4 +66,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 52.struct_func(结构体函数)
 53.method(函数调用限制)
 54.expose(简单了解标示符首字母大写暴露问题)
-55.method_pointer
+55.method_pointer(函数调用限制传指针)
