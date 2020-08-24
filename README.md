@@ -64,3 +64,6 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 50.struct02(批量结构体传参，结构体内字段内存地址连续性)
 51.struct_pointer(结构体指针)
 52.struct_func(结构体函数)
+53.method(函数调用限制)
+54.expose(简单了解标示符首字母大写暴露问题)
+55.method_pointer
