@@ -12,6 +12,8 @@ func (m myInt) hello() {
 
 func main() {
 	var m myInt = 100
+	n := myInt(200) //以myInt为类型赋值
+	fmt.Println(n)
 	m.hello()
 
 }
