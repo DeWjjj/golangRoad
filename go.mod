@@ -1,3 +1,3 @@
-module GOLANGROAD
+module golangRoad
 
 go 1.14
