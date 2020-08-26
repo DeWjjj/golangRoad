@@ -36,7 +36,7 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 23.slice_append00(切片的删除案例)
 24.pointer(指针取地址，和取该地址的值)
 25.map(map使用，类似复合数组)
-26.map_delete(map按照key来删除数据) //go doc 可以查看文档，但是中国人推荐上 http://www.studygolang.com/pkgoc 查阅
+26.map_delete(map按照key来删除数据) ##go doc 可以查看文档，但是中国人推荐上 http://www.studygolang.com/pkgoc 查阅
 27.student_score(rand函数随机生成成绩，排序)
 28.total_words(判断单词在句子中的出现次数)
 29.func(自建函数，int=>string转换)
@@ -82,5 +82,5 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 68.empty_interface(空接口，形同万能变量)
 69.type_assertion(类型断言,想知道空接口内具体值类型)
 70.import_package(要导包的程序) + plus(导入包)
-//导包会涉及到golang目录的问题，统一把文件放置在src下。
-//macOs用户无所谓存放地址，WinOs可以直接在环境变量中更改。
+##导包会涉及到golang目录的问题，统一把文件放置在src下。
+##macOs用户无所谓存放地址，WinOs可以直接在环境变量中更改。
