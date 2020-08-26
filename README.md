@@ -81,4 +81,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 67.nested_interface(嵌套接口型，案例是接口上做一个集合，其类型实际上在内存中表现为动态化。)
 68.empty_interface(空接口，形同万能变量)
 69.type_assertion(类型断言,想知道空接口内具体值类型)
-70.package(包)
+70.import_package(导包)
