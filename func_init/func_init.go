@@ -1,8 +1,8 @@
 package main
 
 import (
+	i "golangRoad/import_init"i //别名
 	"fmt"
-	"golangRoad/import_init"
 )
 
 func init()  {
@@ -10,7 +10,7 @@ func init()  {
 }
 
 func main() {
-	ret := import_init.Plus(1,2)
+	ret := .Plus(1,2)
 	fmt.Println(ret)
 }
 
