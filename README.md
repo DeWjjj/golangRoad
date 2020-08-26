@@ -84,3 +84,6 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 70.import_package(要导包的程序) + plus(导入包)
 ##导包会涉及到golang目录的问题，统一把文件放置在src下。
 ##macOs用户无所谓存放地址，WinOs可以直接在环境变量中更改。
+70.import_package(导包) + plus(被导包)
+71.func_init(init()函数)
+
