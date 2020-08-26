@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	in "golangRoad/import_init" //别名in
+	in "golangRoad/import_init" //别名
 )
 
 func init()  {
