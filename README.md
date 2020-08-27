@@ -86,3 +86,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 #macOs用户无所谓存放地址，WinOs可以直接在环境变量中更改。
 71.func_init(导包) + import_init(被导包) #立即执行函数。
 72.fileOpen(打开文件、读取文件)
+73.fileReadline(根据自己设置的分隔符导报。)
