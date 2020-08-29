@@ -25,8 +25,12 @@ func timeDemo() {
 	fmt.Println(ret)
 	fmt.Println(ret.Year()) //2020
 	fmt.Println(ret.Day())  //28
+
+	//Add()加一个小时之后的时间。
+	fmt.Println(now.Add(1 * time.Hour))
 }
 
 func main() {
 	timeDemo()
+	fmt.Println(time.Second) //1s
 }

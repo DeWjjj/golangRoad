@@ -95,3 +95,5 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 79.func_linuxVim(有文件就打开添加，没文件就直接创建)
 80.func_fileInsert(文件内部插入字符串)
 81.func_time(时间戳)
+82.time_Tick()(计时器简易使用)
+83.time_format(时间格式化)
