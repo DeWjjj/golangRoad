@@ -93,3 +93,5 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 77.ioutilWrite(ioutil、读、写、新建、刷新)
 78.copyFile(拷贝文件函数)
 79.func_linuxVim(有文件就打开添加，没文件就直接创建)
+80.func_fileInsert(文件内部插入字符串)
+81.func_time(时间戳)

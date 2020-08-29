@@ -7,6 +7,7 @@ import (
 
 func linuxVim(fileName string, fileAppend string) error {
 	tmpFile := "./" + fileName
+	fmt.Println(tmpFile) // ./test.txt
 	tmp, err := os.OpenFile(tmpFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0755)
 	if err != nil {
 		return err
