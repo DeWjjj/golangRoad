@@ -1,6 +1,6 @@
-#TITLE: GOLANG_ROAD
-#AUTHOR: DEW_WANG
-#START_DATE: 2020/8/3
+# TITLE: GOLANG_ROAD
+# AUTHOR: DEW_WANG
+# START_DATE: 2020/8/3
 
 GO语言的被称为21世纪的C语言，其语言特性因为出现的时候在2008年。
 AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之处就支持多线程。
@@ -82,8 +82,8 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 68.empty_interface(空接口，形同万能变量)
 69.type_assertion(类型断言,想知道空接口内具体值类型)
 70.import_package(导包) + plus(被导包)
-#导包会涉及到golang目录的问题，统一把文件放置在src下。
-#macOs用户无所谓存放地址，WinOs可以直接在环境变量中更改。
+# 导包会涉及到golang目录的问题，统一把文件放置在src下。
+# macOs用户无所谓存放地址，WinOs可以直接在环境变量中更改。
 71.func_init(导包) + import_init(被导包) #立即执行函数。
 72.fileOpen(打开文件、读取文件)
 73.fileReadline(根据自己设置的分隔符输出)
@@ -104,3 +104,5 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 88.log00(日志案例，不完全)
 89.runetime_Caller(检测所调用函数位置)
 90.fileInfo(文件信息)
+# 自此开始golang的学习就基本上告一段落了，此教程仅仅作为了解就结束了。
+# 通过此教程，我们已经可以开始阅读官方的文档，所以接下来的旅程将会是以实战和小案例为基础。
