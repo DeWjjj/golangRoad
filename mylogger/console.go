@@ -5,23 +5,23 @@ import (
 	"time"
 )
 
-//Logger struct >> exported
-type Logger struct {
+//ConsoleLogger struct >> exported
+type ConsoleLogger struct {
 	Level LogLevel
 }
 
 //Newlog func >> exported
-func Newlog(levelStr string) Logger {
+func Newlog(levelStr string) ConsoleLogger {
 	level, err := parseLogLevel(levelStr)
 	if err != nil {
 		panic(err)
 	}
-	return Logger{
+	return ConsoleLogger{
 		Level: level,
 	}
 }
 
-func (l Logger) enable(LogLevel LogLevel) bool {
+func (l ConsoleLogger) enable(LogLevel LogLevel) bool {
 	return LogLevel >= l.Level
 }
 
@@ -33,14 +33,14 @@ func log(lv LogLevel, format string, a ...interface{}) {
 }
 
 //Debug func >> exported
-func (l Logger) Debug(format string, a ...interface{}) {
+func (l ConsoleLogger) Debug(format string, a ...interface{}) {
 	if l.enable(DEBUG) {
 		log(DEBUG, format, a...)
 	}
 }
 
 //Trace func >> exported
-func (l Logger) Trace(format string, a ...interface{}) {
+func (l ConsoleLogger) Trace(format string, a ...interface{}) {
 	if l.enable(TRACE) {
 		log(TRACE, format, a...)
 
@@ -48,7 +48,7 @@ func (l Logger) Trace(format string, a ...interface{}) {
 }
 
 //Info func >> exported
-func (l Logger) Info(format string, a ...interface{}) {
+func (l ConsoleLogger) Info(format string, a ...interface{}) {
 	if l.enable(INFO) {
 		log(INFO, format, a...)
 
@@ -56,7 +56,7 @@ func (l Logger) Info(format string, a ...interface{}) {
 }
 
 //Warning func >> exported
-func (l Logger) Warning(format string, a ...interface{}) {
+func (l ConsoleLogger) Warning(format string, a ...interface{}) {
 	if l.enable(WARNING) {
 		log(WARNING, format, a...)
 
@@ -64,7 +64,7 @@ func (l Logger) Warning(format string, a ...interface{}) {
 }
 
 //Error func >> exported
-func (l Logger) Error(format string, a ...interface{}) {
+func (l ConsoleLogger) Error(format string, a ...interface{}) {
 	if l.enable(ERROR) {
 		log(ERROR, format, a...)
 
@@ -72,7 +72,7 @@ func (l Logger) Error(format string, a ...interface{}) {
 }
 
 //Fatal func >> exported
-func (l Logger) Fatal(format string, a ...interface{}) {
+func (l ConsoleLogger) Fatal(format string, a ...interface{}) {
 	if l.enable(FATAL) {
 		log(FATAL, format, a...)
 
