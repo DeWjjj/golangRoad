@@ -101,6 +101,6 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 85.time_Sub()(时间相减求间隔)
 86.time_loc(计算时间，有关时区的问题)
 87.log(日志)
-88.log00(日志案例，不完全)
+88.mylogger_test+mylogger(日志库)
 89.runetime_Caller(检测所调用函数位置)
 90.fileInfo(文件信息)

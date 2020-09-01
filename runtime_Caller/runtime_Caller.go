@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"path"
 	"runtime"
 )
 
@@ -15,11 +16,12 @@ func f0() {
 		return
 	}
 	funcName := runtime.FuncForPC(pc).Name()
-	fmt.Println(file)     ///Users/dew/go/src/golangRoad/runtime_Caller/runtime_Caller.go
-	fmt.Println(line)     //9
-	fmt.Println(ok)       //true
-	fmt.Println(pc)       //17420475
-	fmt.Println(funcName) //main.f0 main包中的f0函数。
+	fmt.Println(file)            ///Users/dew/go/src/golangRoad/runtime_Caller/runtime_Caller.go
+	fmt.Println(path.Base(file)) //path包中的Base()可以拿到路径最后的文件名 //runtime_Caller.go
+	fmt.Println(line)            //9
+	fmt.Println(ok)              //true
+	fmt.Println(pc)              //17420475
+	fmt.Println(funcName)        //main.f0 main包中的f0函数。
 }
 
 func f1() {
