@@ -12,6 +12,7 @@ func main() {
 		fmt.Printf("err: %v.\n", err)
 		return
 	}
+	defer file0.Close()
 	fmt.Printf("%T\n", file0) //*os.File
 	for {
 		_, err := file0.WriteString("1233211234567\n")
