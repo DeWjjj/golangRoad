@@ -30,8 +30,8 @@ const (
 )
 
 func parseLogLevel(s string) (LogLevel, error) {
-	s = strings.ToLower(s)
-	switch s {
+	s = strings.ToLower(s) //将传入的字符串转换成消协
+	switch s {             //将小写的字符串传入switch，返回一个变量（上面const中以iota为方法赋予的uint16）
 	case "debug":
 		return DEBUG, nil
 	case "trace":
@@ -44,13 +44,14 @@ func parseLogLevel(s string) (LogLevel, error) {
 		return ERROR, nil
 	case "fatal":
 		return FATAL, nil
-	default:
-		err := errors.New("无效的日志级别")
+	default: //考虑到可能会输入匹配不上的的字符串
+		err := errors.New("无效的日志级别") //新建一种err，内容为“无效的日志级别”
 		return UNKOWN, err
 	}
 
 }
 
+//解析获得的变量（上面const中以iota为方法赋予的uint16）,返回一个字符串
 func getLogString(lv LogLevel) string {
 	switch lv {
 	case DEBUG:
@@ -82,6 +83,7 @@ func getInfo(skip int) (funcName, fileName string, lineNo int) {
 	return
 }
 
+//console.go中用来打印的代码。
 func log(lv LogLevel, format string, a ...interface{}) {
 	msg := fmt.Sprintf(format, a...) //组合format和a字段。
 	now := time.Now()

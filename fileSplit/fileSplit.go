@@ -1,0 +1,45 @@
+package main
+
+import (
+	"fmt"
+	"os"
+	"time"
+)
+
+func fileSplit(fileObj *os.File, now string) {
+	fileObj.Close()
+	os.Rename(fileObj.Name(), now+".txt")
+	time.Sleep(time.Second)
+}
+
+func checkSize(fileObj *os.File, maxFileSize int64) bool {
+	fileInfo, err := fileObj.Stat()
+	if err != nil {
+		fmt.Printf("Get file info failed,err: %v.\n", err)
+	}
+	if fileInfo.Size() >= maxFileSize {
+		return true
+	}
+	return false
+}
+
+func openFile() *os.File {
+	fileObj, err := os.OpenFile("./test.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		fmt.Printf("Open file failed,err: %v.\n", err)
+	}
+	return fileObj
+}
+
+func main() {
+	var maxFileSize int64 = 100
+	fileObj := openFile()
+	for {
+		now := time.Now().Format("20060102150405000")
+		fmt.Fprintln(fileObj, "1233211234567")
+		if checkSize(fileObj, maxFileSize) {
+			fileSplit(fileObj, now)
+			fileObj = openFile()
+		}
+	}
+}
