@@ -6,6 +6,7 @@ import (
 	"path"
 	"runtime"
 	"strings"
+	"time"
 )
 
 //LogLevel type >> exported
@@ -79,4 +80,11 @@ func getInfo(skip int) (funcName, fileName string, lineNo int) {
 	funcName = strings.Split(funcName, ".")[1] //得到的funcName是main.mian函数，因为是main所以，我们只需要一个就够了。
 	//所以将其用strings里面的Split()以 "." 为基础分割，取得切片其中的第一个。
 	return
+}
+
+func log(lv LogLevel, format string, a ...interface{}) {
+	msg := fmt.Sprintf(format, a...) //组合format和a字段。
+	now := time.Now()
+	funcName, fileName, lineNo := getInfo(3)
+	fmt.Printf("[%s] [%s] [%s:%s:%d] %s.\n", now.Format("2006-01-02 15:04:05"), getLogString(lv), fileName, funcName, lineNo, msg)
 }

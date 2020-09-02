@@ -7,7 +7,7 @@ import (
 
 //testing mylogger.
 func main() {
-	log := mylogger.Newlog("error")
+	log := mylogger.NewFileLogger("Info", "./", "dew.log", 10*1024*1024)
 	for {
 		log.Debug("Debug log")
 		log.Trace("Trace log")
