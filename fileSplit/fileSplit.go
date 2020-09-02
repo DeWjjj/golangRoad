@@ -44,7 +44,7 @@ cycle1:
 		if checkSize(fileObj, maxFileSize) {
 			fileSplit(fileObj, now)
 			fileObj = openFile()
-			goto cycle1
+			goto cycle1 //这里尝试使用了一下goto，直接跳转到label。
 		}
 	}
 }
