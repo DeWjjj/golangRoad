@@ -37,12 +37,14 @@ func openFile() *os.File {
 func main() {
 	var maxFileSize int64 = 100
 	fileObj := openFile()
+cycle1:
 	for {
 		now := time.Now().Format("20060102150405000")
 		fmt.Fprintln(fileObj, "1233211234567")
 		if checkSize(fileObj, maxFileSize) {
 			fileSplit(fileObj, now)
 			fileObj = openFile()
+			goto cycle1
 		}
 	}
 }
