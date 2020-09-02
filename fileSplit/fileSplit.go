@@ -6,12 +6,14 @@ import (
 	"time"
 )
 
+//切割文件
 func fileSplit(fileObj *os.File, now string) {
 	fileObj.Close()
 	os.Rename(fileObj.Name(), now+".txt")
 	time.Sleep(time.Second)
 }
 
+//判断大小
 func checkSize(fileObj *os.File, maxFileSize int64) bool {
 	fileInfo, err := fileObj.Stat()
 	if err != nil {
@@ -23,6 +25,7 @@ func checkSize(fileObj *os.File, maxFileSize int64) bool {
 	return false
 }
 
+//创建文件
 func openFile() *os.File {
 	fileObj, err := os.OpenFile("./test.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if err != nil {
