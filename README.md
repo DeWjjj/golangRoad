@@ -102,3 +102,8 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 89. runetime_Caller(检测所调用函数位置)
 90. fileInfo(文件信息)
 91. fileSplit(依照文件信息大小，分割文件并命名为时间)
+92. reflect(反射)
+93. reflect00(反射包，读类型reflect.Typeof())
+95. reflect01(反射包，读其值reflect.Valueof())
+96. reflect02(反射包，改其值Elem())
+97. reflect03(反射包，判断是否有效或者为空)
