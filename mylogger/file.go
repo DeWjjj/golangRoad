@@ -120,8 +120,8 @@ func (f *FileLogger) log(lv LogLevel, format string, a ...interface{}) {
 	}
 }
 
-//Newlog func >> exported
-func Newlog(levelStr string) ConsoleLogger {
+//NewConsoleLog func >> exported
+func NewConsoleLog(levelStr string) ConsoleLogger {
 	level, err := parseLogLevel(levelStr)
 	if err != nil {
 		panic(err)
