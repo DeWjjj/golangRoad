@@ -21,7 +21,8 @@ func main() {
 		field := t.Field(i) //Field()函数可以得到结构体中的字段信息
 		fmt.Printf("name: %s index: %d type: %v json_tag: %v.\n", field.Name, field.Index, field.Type, field.Tag.Get("json"))
 	}
+	//通过指定字段名字获得指定结构体字段信息
 	if scoreField, ok := t.FieldByName("Score"); ok {
-		fmt.Printf("name: %s index: %d type: %v json tag:%v.\n", scoreField.Name, scoreField.Index, scoreField.Type, scoreField.Tag.Get("json"))
+		fmt.Printf("name: %s index: %d type: %v json_tag: %v.\n", scoreField.Name, scoreField.Index, scoreField.Type, scoreField.Tag.Get("json"))
 	}
 }
