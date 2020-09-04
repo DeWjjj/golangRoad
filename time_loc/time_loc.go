@@ -17,9 +17,9 @@ func main() {
 	if err != nil {
 		fmt.Printf("err: %v.\n", err)
 	}
-	fmt.Println(time1) //6h54m9.180698s，有时区字符串转换其值带有时区。
+	fmt.Println(time1)
 	time0 := time1.Sub(now)
-	fmt.Println(time0)
+	fmt.Println(time0) //6h54m9.180698s，有时区字符串转换其值带有时区。
 	time2, err := time.Parse("2006/01/02 15/04/05", "2020/08/30 00/00/00")
 	if err != nil {
 		fmt.Printf("err: %v.\n", err)
