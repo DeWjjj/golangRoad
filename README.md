@@ -110,4 +110,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 98. reflect04(for循环遍历结构体内字段信息)
 99. reflect05(for循环遍历以结构体为方法的函数)
 # 
-100. ini(读取conf.ini文件)
+100. ini(读取conf.ini文件) //github:go-ini
