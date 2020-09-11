@@ -11,6 +11,6 @@ func main() {
 			fmt.Println(i)
 		}()
 	}
-	fmt.Println("main")
+	// fmt.Println("main")
 	time.Sleep(time.Second)
 }
