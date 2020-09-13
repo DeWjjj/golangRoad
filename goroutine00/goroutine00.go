@@ -7,9 +7,9 @@ import (
 
 func main() {
 	for i := 0; i < 1000; i++ {
-		go func() {
+		go func(i int) {
 			fmt.Println(i)
-		}()
+		}(i)
 	}
 	// fmt.Println("main")
 	time.Sleep(time.Second)
