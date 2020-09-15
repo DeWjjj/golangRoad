@@ -114,3 +114,6 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 101. strconv(各种类型字符串转型)
 102. goroutine(并发练习01)
 103. goroutine00(并发练习02)
+104. sync_WaitGroup(通过引入一种计数器，来解决函数提前结束)
+105. GOMAXPROCS(限制核型数量)
+106. channel(通道)
