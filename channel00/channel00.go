@@ -1,12 +1,31 @@
 package main
 
-var a, b chan int
+import (
+	"fmt"
+)
 
 func main() {
-	a = make(chan int)
-	b = make(chan int)
-	for i := 0; i < 100; i++ {
-		a <- i
-	}
+	ch1 := make(chan int)
+	ch2 := make(chan int)
 
+	go func() {
+		for i := 0; i < 100; i++ {
+			ch1 <- i
+		}
+		close(ch1)
+	}()
+
+	go func() {
+		for {
+			i, ok := <-ch1
+			if !ok {
+				break
+			}
+			ch2 <- i * i
+		}
+		close(ch2)
+	}()
+	for i := range ch2 {
+		fmt.Println(i)
+	}
 }
