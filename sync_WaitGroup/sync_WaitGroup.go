@@ -31,6 +31,6 @@ func main() {
 	for i := 0; i < 10; i++ {
 		endVal.Add(1)
 		go test0(i)
+		endVal.Wait() //等待wg的计数器减为0
 	}
-	endVal.Wait() //等待wg的计数器减为0
 }

@@ -12,12 +12,15 @@ func main() {
 	a <- 1
 	a <- 2
 	wg.Add(2)
+
 	go func() {
 		for {
 			x := <-a
 			fmt.Println(x)
 			wg.Done()
+
 		}
+
 	}()
 	wg.Wait()
 
