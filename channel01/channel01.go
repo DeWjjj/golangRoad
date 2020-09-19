@@ -26,7 +26,7 @@ func f2(ch1, ch2 chan int) {
 		}
 		ch2 <- x * x
 	}
-	once.Do(func() { close(ch2) }) //确保通道只关闭一次
+	// once.Do(func() { close(ch2) }) //确保通道只关闭一次
 }
 
 func main() {
