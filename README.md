@@ -121,3 +121,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 108. channel01(通道案例函数化)
 109. close(关闭通道)
 110. range(WaitGroup简易使用)
+111. single_channel(单向通道简易简易使用)
