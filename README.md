@@ -124,3 +124,5 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 111. single_channel(单向通道简易简易使用)
 112. work_pool(简易线程池)
 113. addDigits(各位数相加)
+114. ex_workpool(13work_pool练习)
+115. select(多路复用)
