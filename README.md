@@ -123,3 +123,4 @@ AMD公司在2005年，就出产了多核处理器，所以GO语言在设计之�
 110. range(WaitGroup简易使用)
 111. single_channel(单向通道简易简易使用)
 112. work_pool(简易线程池)
+113. addDigits(各位数相加)
