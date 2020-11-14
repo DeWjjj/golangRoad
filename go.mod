@@ -1,3 +1,3 @@
-module GitHub/golangRoad
+module golangRoad
 
 go 1.15
