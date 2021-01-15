@@ -1,5 +1,5 @@
-## TITLE: GOLANG_ROAD(暂缓更新，考学中。)
-## AUTHOR: DEW_WANG
+## TITLE: GOLANG_ROAD
+## AUTHOR: DEWjjj
 ## START_DATE: 2020/8/3
 
 >GO语言的被称为21世纪的C语言，其语言特性因为出现的时候在2008年。
